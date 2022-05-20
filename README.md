@@ -1,6 +1,4 @@
-# nextflix-rooms-project
-End to End Machine Learning Feature for Netflix's Recommender System 
-![github-header-image-3](https://user-images.githubusercontent.com/96799559/169617485-5c10b5bc-e4c4-4a2b-a72b-ee1d88b62312.png)
+![github-header-image-4](https://user-images.githubusercontent.com/96799559/169620952-bff4c7e2-f40b-45b3-b4e5-6aa54ae49b82.png)
 
 
 ## Project Description
