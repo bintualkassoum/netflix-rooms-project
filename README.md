@@ -22,26 +22,16 @@ To see our full project proposal, refer to the [following](https://github.com/bi
 ## Feature Engineering 
 
 ## Clustering 
-![](https://img.shields.io/badge/Library-Google%20Colab-informational?style=flat&logo=googlecolab&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Numpy-informational?style=flat&logo=numpy&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=F25757)
 
 ## Results 
-![](https://img.shields.io/badge/Library-Google%20Colab-informational?style=flat&logo=googlecolab&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Numpy-informational?style=flat&logo=numpy&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=F25757)
 
 ## User Persona 
 
 ## Product Design 
-![](https://img.shields.io/badge/Library-Google%20Colab-informational?style=flat&logo=googlecolab&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Numpy-informational?style=flat&logo=numpy&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=F25757)
+![](https://img.shields.io/badge/Library-Balsamiq-informational?style=flat&logoColor=white&color=F25757)
+![](https://img.shields.io/badge/Library-MS%20Power%20Point-informational?style=flat&logo=numpy&logoColor=white&color=F25757)
 
 ## Deployment 
-![](https://img.shields.io/badge/Library-Google%20Colab-informational?style=flat&logo=googlecolab&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Numpy-informational?style=flat&logo=numpy&logoColor=white&color=F25757)
-![](https://img.shields.io/badge/Library-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=F25757)
 
 ## What I Learned 
 
