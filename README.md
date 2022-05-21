@@ -15,17 +15,52 @@ To see our full project proposal, refer to the [following](https://github.com/bi
 ![](https://img.shields.io/badge/Library-Numpy-informational?style=flat&logo=numpy&logoColor=white&color=F25757)
 ![](https://img.shields.io/badge/Library-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=F25757)
 
-## Data Processing 
+No additional packages need to be installed, as we used `Pandas` and `Numpy`, both of which are pre-installed on Google Colab. 
 
-## Exploratory Analysis 
+For additional information regarding package and library installations via Google Colab, please see [here](https://colab.research.google.com/github/bebi103a/bebi103a.github.io/blob/master/lessons/03/packages_and_modules.ipynb).
 
-## Feature Engineering 
 
-## Clustering 
+## K-Means Model
 
-## Results 
+### Implementation
+```
+from sklearn.cluster import KMeans
 
-## User Persona 
+KM_clusters = KMeans(n_clusters=20, init='k-means++').fit(XC) 
+KM_clustered = XC.copy()
+KM_clustered = pd.DataFrame(KM_clustered)
+KM_clustered.loc[:,'Cluster'] = KM_clusters.labels_ 
+```
+### PCA Fitting 
+```
+from sklearn.decomposition import PCA 
+
+WCSS = []
+for i in range(1, 21): 
+  kmeans_pca = KMeans(n_clusters = i, init = 'k-means++', random_state=42)
+  kmeans_pca.fit(scores_pca)
+  WCSS.append(kmeans_pca.inertia_)
+  ```
+### PCA Implementation 
+```
+kmeans_pca = KMeans(n_clusters=20, init = 'k-means++', random_state=42)
+kmeans_pca.fit(scores_pca)
+```
+
+### t-SNE Implementation
+```
+from sklearn.manifold import TSNE
+
+tsne = TSNE(verbose=1, perplexity=50) 
+X_embedded = tsne.fit_transform(X_scaled.to_numpy())
+```
+### Decision Tree Cluster Analysis
+```
+from sklearn import tree
+
+clf = DecisionTreeClassifier(max_depth=3, random_state=42)
+clf.fit(X_train, y_train)
+```
 
 ## Product Design 
 ![](https://img.shields.io/badge/Library-Balsamiq-informational?style=flat&logoColor=white&color=F25757)
@@ -47,3 +82,4 @@ To see our full project proposal, refer to the [following](https://github.com/bi
 [Yiman Zhou](https://github.com/yimanzhou)
 
 ## Helpful Resources 
+Google Colaboratory. (n.d.). packages_and_modules.ipynb. Google Colaboratory (Colab). Retrieved May 21, 2022, from https://colab.research.google.com/github/bebi103a/bebi103a.github.io/blob/master/lessons/03/packages_and_modules.ipynb
