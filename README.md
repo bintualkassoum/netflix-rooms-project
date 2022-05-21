@@ -25,3 +25,7 @@ To see our full project proposal, refer to the [following](https://github.com/bi
 ## What I Learned 
 
 ## Next Steps 
+
+## My Team  
+
+## Helpful Resources 
