@@ -19,7 +19,6 @@ No additional packages need to be installed, as we used `Pandas` and `Numpy`, bo
 
 For additional information regarding package and library installations via Google Colab, please see [here](https://colab.research.google.com/github/bebi103a/bebi103a.github.io/blob/master/lessons/03/packages_and_modules.ipynb).
 
-
 ## K-Means Model
 
 ### Implementation
@@ -31,6 +30,16 @@ KM_clustered = XC.copy()
 KM_clustered = pd.DataFrame(KM_clustered)
 KM_clustered.loc[:,'Cluster'] = KM_clusters.labels_ 
 ```
+<p align="center">
+<img align="middle" src="https://user-images.githubusercontent.com/96799559/169928392-b16768c9-df55-4454-ab28-55e6b6b12b89.jpg" width="500" length="250" />
+<!-- <figcaption>Samples from SDEBNN-learned predictive prior and posterior density distributions.</figcaption> -->
+</p>
+
+<p align="center">
+<img align="middle" src="https://user-images.githubusercontent.com/96799559/169928393-d8ade16b-bbaa-4ac0-99d7-6fecddefbe03.jpg" width="500" length="250" />
+<!-- <figcaption>Samples from SDEBNN-learned predictive prior and posterior density distributions.</figcaption> -->
+</p>
+
 ### PCA Fitting 
 ```
 from sklearn.decomposition import PCA 
@@ -41,11 +50,25 @@ for i in range(1, 21):
   kmeans_pca.fit(scores_pca)
   WCSS.append(kmeans_pca.inertia_)
   ```
+<p align="center">
+<img align="middle" src="https://user-images.githubusercontent.com/96799559/169928398-a3ec9929-d55c-40a6-ad03-3785c4f2388d.jpg" width="500" length="250" />
+<!-- <figcaption>Samples from SDEBNN-learned predictive prior and posterior density distributions.</figcaption> -->
+</p>
+
+<p align="center">
+<img align="middle" src="https://user-images.githubusercontent.com/96799559/169928394-7253d814-cec2-490b-b8ce-bba762136b00.jpg" width="500" length="250" />
+<!-- <figcaption>Samples from SDEBNN-learned predictive prior and posterior density distributions.</figcaption> -->
+</p>
+
 ### PCA Implementation 
 ```
 kmeans_pca = KMeans(n_clusters=20, init = 'k-means++', random_state=42)
 kmeans_pca.fit(scores_pca)
 ```
+<p align="center">
+<img align="middle" src="https://user-images.githubusercontent.com/96799559/169928395-d0e405da-1b6e-4858-be92-9ecc2811113b.jpg" width="500" length="250" />
+<!-- <figcaption>Samples from SDEBNN-learned predictive prior and posterior density distributions.</figcaption> -->
+</p>
 
 ### t-SNE Implementation
 ```
@@ -54,6 +77,11 @@ from sklearn.manifold import TSNE
 tsne = TSNE(verbose=1, perplexity=50) 
 X_embedded = tsne.fit_transform(X_scaled.to_numpy())
 ```
+<p align="center">
+<img align="middle" src="https://user-images.githubusercontent.com/96799559/169928396-6e32ac36-b421-42cb-a490-753fd07a3ea8.jpg" width="500" length="250" />
+<!-- <figcaption>Samples from SDEBNN-learned predictive prior and posterior density distributions.</figcaption> -->
+</p>
+
 ### Decision Tree Cluster Analysis
 ```
 from sklearn import tree
