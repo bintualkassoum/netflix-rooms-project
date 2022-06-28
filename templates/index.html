@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netflix Rooms Deployment</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+  <h1 class= "logo">Which Community Room Is Best For You?</h1>
+    <form action="/predict" method="POST">
+      <label for="userId">User</label>
+        <input type="text" id="userId" name="userId"><br>
+      <label for="age">How Old Are You?</label>
+        <input type="text" id="age" name="age"><br>
+      <label for="sex">Which Sex Do You Most Identify With?</label>
+        <select id="sex" name="sex">
+        <option value="0">
+          Female
+        </option>
+        <option value="1">
+          Male
+        </option>
+      </select><br>
+      <label for="rating">Average-User-Movie-Rating</label>
+        <input type="text" id="rating" name="rating"><br>
+      <label for="Genres">Favourite-Movie-Genres</label>
+        <select id="Genres" name="Genres">
+        <option value="0">
+          Drama
+        </option>
+        <option value="1">
+          Action
+        </option>
+        <option value="2">
+          Thriller
+        </option>
+        <option value="3">
+          Adventure
+        </option>
+        <option value="4">
+          Sci-Fi
+        </option>
+        <option value="5">
+          Crime
+        </option>
+        <option value="6">
+          Romance
+        </option>
+      </select><br>
+      <label for="Genre Values">Rate Your Fave Genres!</label>
+        <input id="Genre Values" type="range" value="5" min="1" max="5"><br>
+      <label for="occupation">What Do You Do?</label>
+        <select id="occupation" name="Occupation">
+        <option value="0">
+          Admin
+        </option>
+        <option value="1">
+          Artist
+        </option>
+        <option value="2">
+          Doctor
+        </option>
+        <option value="3">
+          Educator
+        </option>
+        <option value="4">
+          Engineer
+        </option>
+        <option value="5">
+          Entertainment
+        </option>
+        <option value="6">
+          Executive
+        </option>
+        <option value="7">
+          Healthcare
+        </option>
+        <option value="8">
+          Homemaker
+        </option>
+        <option value="9">
+          Lawyer
+        </option>
+        <option value="10">
+          Librarian
+        </option>
+        <option value="11">
+          Marketing
+        </option>
+        <option value="12">
+          Unemployed
+        </option>
+        <option value="13">
+          Other
+        </option>
+        <option value="14">
+          Programmer
+        </option>
+        <option value="15">
+          Retired
+        </option>
+        <option value="16">
+          Marketing
+        </option>
+        <option value="17">
+          Unemployed
+        </option>
+        <option value="18">
+          Other
+        </option>
+        <option value="19">
+          Programmer
+        </option>
+        <option value="20">
+          Retired
+        </option>
+      </select><br>
+      <label for="state">What State Do You Live In?</label>
+        <select id="state" name="state">
+        <option value="0">
+          AK
+        </option>
+        <option value="1">
+          AL
+        </option>
+        <option value="2">
+          AP
+        </option>
+        <option value="3">
+          AR
+        </option>
+        <option value="4">
+          AZ
+        </option>
+        <option value="5">
+          CA
+        </option>
+        <option value="6">
+          CO
+        </option>
+        <option value="7">
+          DC
+        </option>
+        <option value="8">
+          DE
+        </option>
+        <option value="9">
+          FL
+        </option>
+        <option value="10">
+          GA
+        </option>
+        <option value="11">
+          HI
+        </option>
+        <option value="12">
+          IA
+        </option>
+        <option value="13">
+          ID
+        </option>
+        <option value="14">
+          IL
+        </option>
+        <option value="15">
+          IN
+        </option>
+        <option value="16">
+          KS
+        </option>
+        <option value="17">
+          KY
+        </option>
+        <option value="18">
+          LA
+        </option>
+        <option value="19">
+          MD
+        </option>
+        <option value="20">
+          MI
+        </option>
+        <option value="21">
+          MN
+        </option>
+        <option value="22">
+          MO
+        </option>
+        <option value="23">
+          MS
+        </option>
+        <option value="24">
+          MT
+        </option>
+        <option value="25">
+          NC
+        </option>
+        <option value="26">
+          ND
+        </option>
+        <option value="27">
+          NE
+        </option>
+        <option value="28">
+          NM
+        </option>
+        <option value="29">
+          NV
+        </option>
+        <option value="30">
+          NY
+        </option>
+        <option value="31">
+          OH
+        </option>
+        <option value="32">
+          OK
+        </option>
+        <option value="33">
+          OR
+        </option>
+        <option value="34">
+          PA
+        </option>
+        <option value="35">
+          SC
+        </option>
+        <option value="36">
+          SD
+        </option>
+        <option value="37">
+          TN
+        </option>
+        <option value="38">
+          TX
+        </option>
+        <option value="39">
+          UT
+        </option>
+        <option value="40">
+          VA
+        </option>
+        <option value="41">
+          WA
+        </option>
+        <option value="42">
+          WI
+        </option>
+        <option value="43">
+          WV
+        </option>
+        <option value="44">
+          WY
+        </option>
+      </select><br>
+      <label for="Languages">Which Languages Do You Watch Movies In?</label> <select id="Languages" name="Languages">
+        <option value="0">
+          Arabic
+        </option>
+        <option value="1">
+          French
+        </option>
+        <option value="2">
+          German
+        </option>
+        <option value="3">
+          Italian
+        </option>
+        <option value="4">
+          Japanese
+        </option>
+        <option value="5">
+          Russian
+        </option>
+        <option value="6">
+          Spanish
+        </option>
+        <option value="7">
+          English
+        </option>
+      </select><br>
+        <label for="Lang Values">Rate Your Movies Languages!</label>
+        <input id="Lang Values" type="range" value="5" min="1" max="5">
+        <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
