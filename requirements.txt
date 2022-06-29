@@ -11,7 +11,8 @@ itsdangerous
 Jinja2
 joblib
 MarkupSafe
-mkl-random
+mkl-fft==2.4.0
+mkl-random==2.4.0
 mkl-service==2.4.0
 numexpr
 numpy
