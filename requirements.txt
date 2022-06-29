@@ -35,7 +35,6 @@ Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
 pip~=21.2.4
 zlib~=1.2.12
 wheel~=0.37.1
-openssl~=1.1.1p
 cryptography~=37.0.1
 flask~=2.0.3
 requests~=2.27.1
