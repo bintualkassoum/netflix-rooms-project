@@ -57,4 +57,3 @@ idna~=3.3
 urllib3~=1.26.9
 pycparser~=2.21
 packaging~=21.3
-python>=3.7,<3.10
