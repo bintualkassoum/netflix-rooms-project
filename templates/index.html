@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Netflix Rooms Deployment</title>
+    <title>Netflix Rooms User Predictions</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
-  <h1 class= "logo">Which Community Room Is Best For You?</h1>
+  <h1 class= "logo">Netflix Rooms User Predictions</h1>
+  <h2 class= "logo">Which Community Room Is Best For You?</h2>
     <form action="/predict" method="POST">
       <label for="userId">User</label>
         <input type="text" id="userId" name="userId"><br>
@@ -46,8 +47,6 @@
           Romance
         </option>
       </select><br>
-      <label for="Genre Values">Rate Your Fave Genres!</label>
-        <input id="Genre Values" type="range" value="5" min="1" max="5"><br>
       <label for="occupation">What Do You Do?</label>
         <select id="occupation" name="Occupation">
         <option value="0">
@@ -252,7 +251,8 @@
           WY
         </option>
       </select><br>
-      <label for="Languages">Which Languages Do You Watch Movies In?</label> <select id="Languages" name="Languages">
+      <label for="Languages">Which Languages Do You Watch Movies In?</label>
+      <select id="Languages" name="Languages">
         <option value="0">
           Arabic
         </option>
@@ -278,8 +278,6 @@
           English
         </option>
       </select><br>
-        <label for="Lang Values">Rate Your Movies Languages!</label>
-        <input id="Lang Values" type="range" value="5" min="1" max="5">
         <br>
       <input type="submit" value="Submit">
     </form>
