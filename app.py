@@ -1,11 +1,6 @@
 # Import Packages
-
-import pickle
-
-import flask
-import numpy as np
 import pandas as pd
-from flask import render_template, request, Flask
+from flask import Flask
 
 filename = '/Users/bintualkassoum/Downloads/final_model.pkl'
 rooms_model = pd.read_pickle(filename)
@@ -33,4 +28,6 @@ def result():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
 
