@@ -109,5 +109,7 @@ clf.fit(X_train, y_train)
 
 [Yiman Zhou](https://github.com/yimanzhou)
 
+[Zhiyi Wang](https://www.linkedin.com/in/zhiyi-zw-0331/)
+
 ## Helpful Resources 
 Google Colaboratory. (n.d.). packages_and_modules.ipynb. Google Colaboratory (Colab). Retrieved May 21, 2022, from https://colab.research.google.com/github/bebi103a/bebi103a.github.io/blob/master/lessons/03/packages_and_modules.ipynb
